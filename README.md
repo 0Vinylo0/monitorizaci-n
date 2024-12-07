@@ -12,9 +12,6 @@ Herramientas y sistemas de monitorización en sistemas Linux
   2.  [Sistemas de monitorización](./sistemas.md)
   
   3.  [Mapa conceptual](./mapa_conceptual.md)
-  
-  4.  [Referencias](./referencias.md)
-
 
 ### Referencias
   
