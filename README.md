@@ -7,11 +7,11 @@ Herramientas y sistemas de monitorización en sistemas Linux
 
 <img src="img/tux-linux-penguin.gif" alt="GIF" width="300" height="300" align="right">
   
-  1.  [Herramientas propias del sistema](./doc/herramientas.md)
+  1.  [Herramientas propias del sistema](doc/herramientas.md)
   
-  2.  [Sistemas de monitorización](./doc/sistemas.md)
+  2.  [Sistemas de monitorización](doc/sitemas.md)
   
-  3.  [Mapa conceptual](./doc/mapa_conceptual.md)
+  3.  [Mapa conceptual](doc/mapa_conceptual.md)
 
 ### Referencias
   
