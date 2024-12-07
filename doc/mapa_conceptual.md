@@ -1,7 +1,5 @@
 # Mapa Conceptual
 
-![Mapa Conceptual](./mapa_conceptual.png)
-
 Este mapa conceptual representa los componentes y relaciones clave en la monitorización de sistemas Linux, abordando aspectos fundamentales como la recopilación de datos, análisis, visualización y acciones correctivas. Es una herramienta para visualizar los flujos de trabajo y las dependencias entre los elementos del sistema.
 
 ---
