@@ -43,6 +43,10 @@ Linux incluye varias herramientas integradas que permiten monitorizar los recurs
 ### `atop`
 **Básico:** Monitoriza procesos y recursos del sistema, guardando información histórica en archivos para un análisis posterior.
 
+Fichero de configuración: atop utiliza un archivo de configuración para personalizar el comportamiento de la herramienta, como definir qué métricas capturar y la frecuencia de registro.
+
+- Ubicación del archivo de configuración: El archivo de configuración de atop suele encontrarse en `/etc/default/atop`.
+
 - Al combinar `htop` y `atop`, se obtiene un balance entre visualización en tiempo real y almacenamiento de registros.
 
 ### `vmstat`
