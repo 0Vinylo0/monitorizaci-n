@@ -33,7 +33,7 @@ Linux incluye varias herramientas integradas que permiten monitorizar los recurs
 ### `top`
 **Básico:** Muestra una vista dinámica de los procesos y el uso de recursos.
 
-- `top -b -a %cpu -n 3 | head -n 17 > 10procesos.txt`: Ejecuta `top` en modo batch, ordena por CPU y guarda los primeros 10 procesos en un archivo.
+- `top -b -o %CPU -n 3 | head -n 17 > 10procesos.txt`: Ejecuta `top` en modo batch, ordena por CPU y guarda los primeros 10 procesos en un archivo.
 
 ### `htop`
 **Básico:** Interfaz interactiva y visual para monitorizar procesos. Permite navegar, buscar y gestionar procesos con facilidad.
