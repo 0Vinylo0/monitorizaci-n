@@ -16,20 +16,20 @@ Linux incluye varias herramientas integradas que permiten monitorizar los recurs
 
 - `ps a`: Lista todos los procesos asociados con terminales.
 
-![](img/ps_a.png)
+![](../img/ps_a.png)
   
 - `ps aux`: Muestra todos los procesos en el sistema junto con información detallada como el usuario, uso de CPU/memoria, y el estado del proceso.
 
-![](img/ps_aux.png)
+![](../img/ps_aux.png)
   
 - `ps -C <comando>`: Filtra y muestra los procesos que coincidan con el nombre del comando especificado.
 
-![](img/ps_-c.png)
+![](../img/ps_-c.png)
 
 ### `ps -eo user,pid,%cpu,%mem,time --sort=-%cpu | head -n 6`
 **Básico:** Lista los procesos mostrando usuario, PID, uso de CPU y memoria, y tiempo de ejecución. Ordena por uso de CPU y limita a los 6 procesos principales.
 
-![](img/ps_-eo.png)
+![](../img/ps_-eo.png)
 
 ### Comparación de `ps`
 - `ps aux` es ideal para un panorama general de los procesos.
@@ -43,16 +43,16 @@ Linux incluye varias herramientas integradas que permiten monitorizar los recurs
 ### `top`
 **Básico:** Muestra una vista dinámica de los procesos y el uso de recursos.
 
-![](img/top.png)
+![](../img/top.png)
 
 - `top -b -o %CPU -n 3 | head -n 17 > 10procesos.txt`: Ejecuta `top` en modo batch, ordena por CPU y guarda los primeros 10 procesos en un archivo.
 
-![](img/top_-b.png)
+![](../img/top_-b.png)
 
 ### `htop`
 **Básico:** Interfaz interactiva y visual para monitorizar procesos. Permite navegar, buscar y gestionar procesos con facilidad.
 
-![](img/htop.png)
+![](../img/htop.png)
 
 - **Diferencia entre `top` y `htop`:** `htop` ofrece una interfaz más visual e interactiva que facilita la gestión de procesos.
 
@@ -70,11 +70,11 @@ Fichero de configuración: atop utiliza un archivo de configuración para person
 
 - `vmstat 5`: Actualiza las estadísticas cada 5 segundos.
 
-![](img/vmstat-5.png)
+![](../img/vmstat-5.png)
 
 - `vmstat -s`: Proporciona un resumen de las estadísticas.
 
-![](img/vmstat-s.png)
+![](../img/vmstat-s.png)
 
 ---
 
@@ -85,11 +85,11 @@ Fichero de configuración: atop utiliza un archivo de configuración para person
 
 - `free -h`: Muestra los datos en formato legible (GB, MB, etc.).
 
-![](img/free-h.png)
+![](../img/free-h.png)
   
 - `free -s 3`: Actualiza la información cada 3 segundos.
 
-![](img/free-s3.png)
+![](../img/free-s3.png)
 
 ---
 
@@ -100,26 +100,26 @@ Fichero de configuración: atop utiliza un archivo de configuración para person
 
 - `df -h`: Presenta la información en un formato legible para humanos.
 
-![](img/df-h.png)
+![](../img/df-h.png)
   
 - `df -T`: Incluye el tipo de sistema de archivos.
 
-![](img/df-T.png)
+![](../img/df-T.png)
 
 ### `du`
 **Básico:** Calcula el uso del espacio en disco.
 
 - `du -h`: Muestra los resultados en formato legible.
 
-![](img/du-h.png)
+![](../img/du-h.png)
   
 - `du -hs`: Resume el uso total del espacio de una carpeta o archivo.
 
-![](img/du-hs.png)
+![](../img/du-hs.png)
   
 - `du -ah /ruta`: Incluye archivos individuales en el análisis.
 
-![](img/du-ah.png)
+![](../img/du-ah.png)
 
 ---
 
@@ -130,23 +130,23 @@ Fichero de configuración: atop utiliza un archivo de configuración para person
 
 - `iostat -m`: Muestra los datos en MB.
 
-![](img/iostat-m.png)
+![](../img/iostat-m.png)
 
 - `iostat -mh`: Incluye encabezados legibles.
 
-![](img/iostat-mh.png)
+![](../img/iostat-mh.png)
 
 - `iostat -x`: Proporciona un desglose detallado por dispositivo.
 
-![](img/iostat-x.png)
+![](../img/iostat-x.png)
   
 - `iostat -sx`: Ordena por uso del dispositivo.
 
-![](img/iostat-sx.png)
+![](../img/iostat-sx.png)
 
 - `iostat -d /dev/sda`: Monitoriza un disco específico.
 
-![](img/iostat-d.png)
+![](../img/iostat-d.png)
 
 ---
 
@@ -157,15 +157,15 @@ Fichero de configuración: atop utiliza un archivo de configuración para person
 
 - Ideal para depuración en profundidad de problemas de red.
 
-![](img/tcpdump.png)
+![](../img/tcpdump.png)
 
 ### `tcptrack`
 **Básico:** Monitoriza conexiones TCP activas y su estado en tiempo real.
 
 - Más visual que `tcpdump`, pero menos detallado.
 
-![](img/tcptrack.png)
-![](img/tcptrack-view.png)
+![](../img/tcptrack.png)
+![](../img/tcptrack-view.png)
 
 ### `iftop`
 **Básico:** Monitoriza el ancho de banda utilizado por las conexiones de red.
@@ -184,11 +184,11 @@ Fichero de configuración: atop utiliza un archivo de configuración para person
 
 - `ss -tuln`: Lista puertos abiertos y servicios en escucha.
 
-![](img/ss-tupan.png)
+![](../img/ss-tupan.png)
 
 - `netstat -anp | grep :80`: Ver conexiones HTTP.
 
-![](img/netstat-80.png)
+![](../img/netstat-80.png)
 
 ### Comparación de Comandos de Redes
 - **`tcpdump`**: Más poderoso para diagnósticos específicos.
@@ -205,7 +205,7 @@ Fichero de configuración: atop utiliza un archivo de configuración para person
 
 - `journalctl -xe`: Muestra eventos recientes con detalles extendidos.
 
-![](img/journalctl.png)
+![](../img/journalctl.png)
   
 - `journalctl -u nginx`: Muestra registros específicos de un servicio.
 
